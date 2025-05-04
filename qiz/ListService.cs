@@ -8,11 +8,13 @@ using System.IO;
 using Qiz.Domain.Entity;
 using Newtonsoft.Json;
 using DocumentFormat.OpenXml.Bibliography;
+using (FileStream fs = File.Open(@"C:\Users\Lenovo\source\repos\qiz\items", FileMode.Open, FileAccess.Read)) ;
 namespace Qiz
 
 {
 	class list_service
 	{
+		
 		public void Method()
 		{
 			List<Item> list = new List<Item>();
